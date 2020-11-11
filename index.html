@@ -49,6 +49,7 @@
                 amount += parseInt(sumArr[i].innerHTML);
             }
             document.getElementById('dealcount').innerHTML = amount + '/11 Deals';
+            addRevenue();
         }
         function addRevenue() {
             var amount = 0;
@@ -75,7 +76,7 @@
                         "<div><span>" + item.gsx$name.$t + ": <span id='close' class='closeCount'>" + item.gsx$amountofcloses.$t + " </span><span>" + ((item.gsx$amountofcloses.$t > 1) ? "Closes" : "Close") + "/$<span class='revenue'>" + item.gsx$revenue.$t + "<span> Revenue</span></div>"
                     )).join('');
                     addDeals();
-                    addRevenue();
+              
                     confettiStarter();
                 })
 
