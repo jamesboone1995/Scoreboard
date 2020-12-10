@@ -8,6 +8,8 @@
     </script>
     <link rel="stylesheet" href="counter.css">
     <title>Counter</title>
+    <meta http-equiv="refresh" content="30">
+
 </head>
 
 <body>
@@ -38,7 +40,7 @@
             if (num > 0) {
 //                 console.log(num);
              
-//                 confetti.start();
+                confetti.start();
                
             } else {
                 document.getElementById('closes').innerHTML = "<img style=\"margin-top: 20px; align-self: center; width: 200px; height: 150px\" src=\"https://i.imgflip.com/4j3tgs.jpg\" >"
@@ -81,7 +83,7 @@
               
                     confettiStarter();
                 })
-            setTimeout(getData(), 60000)
+            
         }
         getData()
     </script>
